@@ -6,6 +6,8 @@
 
 # File Cacher
 
+![npm](https://img.shields.io/npm/v/file-cacher)
+
 ## Description
 This package will handle file caching for services in need for fast file access.
 In essence, it will cache common files in memory, while less common files will be accessed from file system.
