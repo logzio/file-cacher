@@ -23,15 +23,15 @@ const fileCacher = new FileCacher({
       maxInMemoryCacheSize: 300, // in MB
 });
 
-const getFileGetter = fileUrl => 
-    () => request({ uri: fileUrl, gzip: true });
 
+const filesGroupIdentifier = 'assets'
 
-async function getFile() {
+function getBundleFile() {
     const fileName = 'dist/bundle.aa8w37vhr.js';
     const fileUrl = `https://app.logz.io/${fileName}`;
+    const fileGetter = () => fetch(fileUrl, { compress: true });
     
-    return fileCacher.get(identifier, fileName, getFileGetter(fileUrl)); 
+    return fileCacher.get(filesGroupIdentifier, fileName, fileGetter); 
 }
 
 getFile()
