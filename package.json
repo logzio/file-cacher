@@ -1,0 +1,25 @@
+{
+  "name": "file-cacher",
+  "version": "1.0.0",
+  "description": "File system and mem-cache for files",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --silent",
+    "lint": "eslint --quiet --color ."
+  },
+  "repository": "git@github.com:logzio/file-cacher",
+  "keywords": [
+    "file cacher",
+    "mem cache"
+  ],
+  "dependencies": {
+    "await-to-js": "2.1.1",
+    "fs-extra": "9.0.1",
+    "recursive-readdir": "^2.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.14.0",
+    "jest": "^26.6.3",
+    "mock-fs": "^4.13.0"
+  }
+}
