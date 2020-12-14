@@ -36,7 +36,7 @@ function getBundleFile() {
     return fileCacher.get(filesGroupIdentifier, fileName, fileGetter); 
 }
 
-getFile()
+getBundleFile()
     .then(file => {
         console.log(file);
     })
